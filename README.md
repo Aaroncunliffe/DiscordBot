@@ -13,6 +13,7 @@ One instance can interact with and store persistent data for multiple servers by
 
 File creation for new servers does not happen dynamically, if bot is added to a new server, it needs to be restarted to use persistent storage operations.
 
+## Commands:
 * !addquote - Add a quote to be stored
 * !addquotewithname - Add a quote to be stored that can be retrieved by name
 * !quote - get random quote stored with number only
