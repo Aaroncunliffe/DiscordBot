@@ -41,7 +41,7 @@ def AddRecordWithName(json, name, addedBy, quote, dateAdded):
         "dateadded":"" + str(dateAdded) + ""
         }})
 
-
+# This is called once the bot has connected, this function checks if there is a .json file for each currently disconnected server, if it doesnt exist, it creates one.
 @client.event
 async def on_ready():
     print("Logged in as")
@@ -62,6 +62,7 @@ async def on_ready():
                 parsed = json.loads(emptyjson)
                 json.dump(parsed, outfile, sort_keys = True, indent = 4, ensure_ascii = False)
 
+# All processing of messages goes on inside this function
 @client.event
 async def on_message(message):
 
