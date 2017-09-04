@@ -1,4 +1,4 @@
-# Discord Quote Bot - 
+# Discord Quote Bot
 uses python 3.5 or up and https://github.com/Rapptz/discord.py For chat only interaction
 
 One instance can interact with and store persistent data for multiple servers by storing using separate json files.
